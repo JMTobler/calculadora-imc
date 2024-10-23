@@ -43,9 +43,9 @@ cd calculadora-imc
 npm install
 ```
 
-4.Instale as dependências:
+4.Inicie o projeto:
 ```
-npm start
+npm run dev
 ```
 O projeto será executado em http://localhost:3000 no seu navegador.
 
