@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Formulario.css';
+import './formulario.css';
 
 const Formulario = () => {
     let [altura, setAltura] = useState(0);
