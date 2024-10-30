@@ -11,17 +11,17 @@ const Formulario = () => {
             const imc = peso / (altura * altura);
 
             if (imc >= 40) {
-                return <h1>Olá {nome}, você esta com obesidade grau III</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta com obesidade grau III</h1>;
             } else if (imc <= 39.9 && imc >= 35) {
-                return <h1>Olá {nome}, você esta com obesidade grau II</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta com obesidade grau II</h1>;
             } else if (imc <= 34.9 && imc >= 30) {
-                return <h1>Olá {nome}, você esta com obesidade grau I</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta com obesidade grau I</h1>;
             } else if (imc <= 29.9 && imc >= 25) {
-                return <h1>Olá {nome}, você esta com sobrepeso</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta com sobrepeso</h1>;
             } else if (imc <= 24.9 && imc >= 18.6) {
-                return <h1>Olá {nome}, você esta Normal</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta Normal</h1>;
             } else if (imc <= 18.5) {
-                return <h1>Olá {nome}, você esta abaixo do normal</h1>;
+                return <h1>Olá {nome}, seu imc é {imc.toFixed(2)} e você esta abaixo do normal</h1>;
             }
         }else {
             return <h1>A sua altura nao pode ser zero</h1>
